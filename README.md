@@ -1,4 +1,8 @@
-# Banda Bem+ 🎵
+<div align="center">
+  <img src="logo/logo.png" alt="Banda Bem+ Logo" width="200"/>
+  
+  # Banda Bem+ 🎵
+</div>
 
 Site oficial da Banda Bem+ - Uma experiência musical única com design moderno e responsivo.
 
