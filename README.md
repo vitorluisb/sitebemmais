@@ -1,23 +1,24 @@
-# Banda Bem + - Site Oficial
+# Banda Bem+ 🎵
 
-Site oficial da Banda Bem +, uma banda baile especializada em eventos e casamentos.
-
-## 🎵 Sobre o Projeto
-
-Este é um site responsivo e moderno desenvolvido para a Banda Bem +, apresentando:
-
-- **Design Responsivo**: Otimizado para desktop, tablet e mobile
-- **Acessibilidade**: Implementado com ARIA labels, navegação por teclado e foco visível
-- **Performance**: Imagens otimizadas em SVG e carregamento eficiente
-- **SEO**: Meta tags otimizadas e structured data
-- **Formulário de Contato**: Validação completa e integração com WhatsApp
+Site oficial da Banda Bem+ - Uma experiência musical única com design moderno e responsivo.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **HTML5**: Estrutura semântica e acessível
-- **CSS3**: Tailwind CSS para estilização
-- **JavaScript**: Vanilla JS para interatividade
-- **SVG**: Ícones e imagens vetoriais customizadas
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilização avançada
+- **JavaScript** - Interatividade
+- **Tailwind CSS** - Framework CSS utilitário (instalação local)
+- **Lightbox** - Galeria de imagens
+- **Responsive Design** - Compatível com todos os dispositivos
+
+## 📱 Características
+
+- ✅ Design totalmente responsivo
+- ✅ Galeria de fotos interativa
+- ✅ Player de música integrado
+- ✅ Seções organizadas (Home, Sobre, Galeria, Contato)
+- ✅ Otimizado para performance
+- ✅ SEO friendly
 
 ## 📁 Estrutura do Projeto
 
