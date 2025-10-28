@@ -1,0 +1,20 @@
+{
+    "name": "Banda Bem +",
+    "short_name": "Banda Bem +",
+    "description": "A banda que transforma qualquer evento em um show!",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1a1a2e",
+    "theme_color": "#8b5cf6",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["music", "entertainment"],
+    "lang": "pt-BR"
+}

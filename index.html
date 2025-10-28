@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Banda Bem + | Música ao Vivo para Seus Eventos | São Paulo</title>
+    <meta name="description" content="Banda Bem + - A melhor música ao vivo para seus eventos em São Paulo. Repertório diversificado, profissionalismo e energia garantida para casamentos, festas e eventos corporativos. Contrate já!">
+    <meta name="keywords" content="banda ao vivo, música para eventos, casamentos, festas, eventos corporativos, São Paulo, banda profissional, entretenimento, MPB, samba, pop, xote, forró, sertanejo">
+    <meta name="author" content="Banda Bem +">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bandabemplus.vercel.app/">
+    <meta property="og:title" content="Banda Bem + | Música ao Vivo para Seus Eventos">
+    <meta property="og:description" content="A melhor música ao vivo para seus eventos. Repertório diversificado, profissionalismo e energia garantida para casamentos, festas e eventos corporativos.">
+    <meta property="og:image" content="https://bandabemplus.vercel.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Banda Bem +">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bandabemplus.vercel.app/">
+    <meta property="twitter:title" content="Banda Bem + | Música ao Vivo para Seus Eventos">
+    <meta property="twitter:description" content="A melhor música ao vivo para seus eventos. Repertório diversificado, profissionalismo e energia garantida.">
+    <meta property="twitter:image" content="https://bandabemplus.vercel.app/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#84cc16">
+
+    <!-- Tailwind CSS - CDN usado para desenvolvimento/prototipagem -->
+    <!-- AVISO: Este CDN não deve ser usado em produção. O aviso no console é esperado. -->
+    <!-- Para produção, instale via npm: https://tailwindcss.com/docs/installation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        secondary: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Banda Bem +",
+      "description": "Banda profissional de música ao vivo para eventos, casamentos e festas em São Paulo",
+      "url": "https://bandabemplus.vercel.app",
+      "logo": "https://bandabemplus.vercel.app/favicon.svg",
+      "image": "https://bandabemplus.vercel.app/og-image.jpg",
+      "genre": ["Pop", "Rock", "MPB", "Samba", "Sertanejo", "Forró", "Xote"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-83-99957-8957",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      },
+      "sameAs": [
+        "https://instagram.com/bandabemplus",
+        "https://wa.me/5583999578957"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-slate-900 to-gray-800 text-white font-sans antialiased">
+    <!-- Audio Element -->
+    <audio id="background-music" preload="auto" loop>
+            <source src="assets/audio/musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-500 text-white px-4 py-2 rounded-lg z-50">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Header -->
+    <header id="header" class="nav-shadcn nav-sticky" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Navegação principal">
+            <!-- Logo/Brand -->
+            <a href="#home" class="nav-brand flex items-center">
+                <img src="logo/logo.png" alt="Banda Bem +" class="h-24 w-auto mr-2">
+            
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#sobre" class="nav-link" role="menuitem">Sobre</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#destaques" class="nav-link" role="menuitem">Destaques</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#midia" class="nav-link" role="menuitem">Mídia</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contato" class="nav-link" role="menuitem">Contato</a>
+                </li>
+            </ul>
+
+            <!-- Desktop CTA Buttons -->
+            <div class="nav-cta flex items-center gap-3">
+                <!-- Music Player Button -->
+                <button id="audio-toggle" 
+                        class="group relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                        aria-label="Reproduzir música"
+                        title="Reproduzir música">
+                    <!-- Play Icon -->
+                    <svg id="play-icon" class="w-4 h-4 text-white transition-opacity duration-200" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <!-- Pause Icon (hidden by default) -->
+                    <svg id="pause-icon" class="w-4 h-4 text-white transition-opacity duration-200 opacity-0 absolute" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                    <!-- Subtle glow effect -->
+                    <div class="absolute inset-0 rounded-full bg-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </button>
+                
+                <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20Banda%20Bem%20+%20para%20meu%20evento" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn btn-whatsapp btn-lg btn-ripple flex items-center justify-center"
+                   aria-label="Entre em contato pelo WhatsApp (abre em nova aba)">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                    </svg>
+                    Entre em contato!
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" 
+                    class="nav-toggle"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="nav-menu mobile hidden" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#home" class="nav-link" role="menuitem">Home</a>
+                </li>
+                <li class="nav-item flex justify-center py-2" role="none">
+                    <button id="audio-toggle-mobile" 
+                            class="group relative flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                            aria-label="Reproduzir música"
+                            title="Reproduzir música">
+                        <!-- Play Icon -->
+                        <svg id="play-icon-mobile" class="w-5 h-5 text-white transition-opacity duration-200" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <!-- Pause Icon (hidden by default) -->
+                        <svg id="pause-icon-mobile" class="w-5 h-5 text-white transition-opacity duration-200 opacity-0 absolute" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                        <!-- Subtle glow effect -->
+                        <div class="absolute inset-0 rounded-full bg-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                    </button>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#sobre" class="nav-link" role="menuitem">Sobre</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#destaques" class="nav-link" role="menuitem">Destaques</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#midia" class="nav-link" role="menuitem">Mídia</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contato" class="nav-link" role="menuitem">Contato</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20Banda%20Bem%20+%20para%20meu%20evento" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-whatsapp btn-lg btn-ripple w-full flex items-center justify-center"
+                       role="menuitem">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                        </svg>
+                        Entre em contato!
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden" role="banner" aria-labelledby="hero-title">
+            <!-- Background Video/Image -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-900/60 to-purple-900/50 z-10"></div>
+                <img src="banner.png" alt="Banda Bem + em apresentação ao vivo no palco" class="w-full h-full object-cover" loading="eager">
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-20 px-4 sm:px-6 md:px-0 text-center flex items-end justify-center min-h-screen pb-32">
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <h1 id="hero-title" class="heading-1 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight">
+                        <span class="text-foreground">Banda Bem +</span>
+                    </h1>
+                    <h2 class="heading-2 text-lg md:text-xl lg:text-2xl font-semibold text-primary-400">
+                        A banda que transforma qualquer evento em um show!
+                    </h2>
+                <p class="lead text-base md:text-lg text-muted-foreground mb-6">
+                    O som perfeito para o seu grande momento!
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
+                    <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20Banda%20Bem%20+%20para%20meu%20evento" 
+                       target="_blank" 
+                       class="btn btn-whatsapp btn-lg btn-ripple hover-scale transition-all w-full sm:w-auto flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                        </svg>
+                        Entre em contato!
+                    </a>
+                    <a href="#midia" 
+                       class="btn btn-outline btn-lg hover-scale transition-all w-full sm:w-auto flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-5-4v4m0 0V7a3 3 0 013-3h4a3 3 0 013 3v4M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        Ver mídia
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+            <div class="animate-bounce">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques Section -->
+    <section id="destaques" class="section-padding bg-gradient-to-br from-slate-800 via-gray-800 to-slate-900">
+        <div class="container-shadcn">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="heading-2 text-3xl md:text-4xl font-bold text-foreground">Nossos Diferenciais</h2>
+                <p class="lead text-lg text-muted-foreground max-w-2xl mx-auto">O que faz da Banda Bem + a escolha perfeita para o seu evento</p>
+            </div>
+
+            <div class="card-grid card-grid-4 stagger-children">
+                <!-- Destaque 1 -->
+                <div class="card-shadcn feature-card card-glass hover-lift scroll-reveal">
+                    <div class="card-content text-center">
+                        <div class="feature-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Setlist Versátil</h3>
+                        <p class="card-description">Repertório adaptado para todos os momentos da sua festa, do início ao fim</p>
+                    </div>
+                </div>
+
+                <!-- Destaque 2 -->
+                <div class="card-shadcn feature-card card-glass hover-lift scroll-reveal">
+                    <div class="card-content text-center">
+                        <div class="feature-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Interação com Público</h3>
+                        <p class="card-description">Presença de palco marcante que envolve e anima todos os convidados</p>
+                    </div>
+                </div>
+
+                <!-- Destaque 3 -->
+                <div class="card-shadcn feature-card card-glass hover-lift scroll-reveal">
+                    <div class="card-content text-center">
+                        <div class="feature-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Experiência Comprovada</h3>
+                        <p class="card-description">Anos de experiência em eventos de diversos portes e estilos</p>
+                    </div>
+                </div>
+
+                <!-- Destaque 4 -->
+                <div class="card-shadcn feature-card card-glass hover-lift scroll-reveal">
+                    <div class="card-content text-center">
+                        <div class="feature-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Qualidade Premium</h3>
+                        <p class="card-description">Equipamentos profissionais e som de alta qualidade garantidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mídia Section -->
+    <section id="midia" class="section-padding bg-gradient-to-br from-gray-800 via-slate-800 to-purple-900/20">
+        <div class="container-shadcn">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="heading-2 text-3xl md:text-4xl font-bold text-foreground">Veja a Banda Bem + em ação nos nossos eventos</h2>
+            </div>
+
+            <!-- Videos -->
+            <div class="space-y-8 mb-12">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Video Player Principal -->
+                    <div class="relative group cursor-pointer video-container" data-video="midia/video/videobem.mp4">
+                        <div class="aspect-video bg-gradient-to-br from-slate-700 to-purple-900/40 rounded-xl overflow-hidden hover-lift scroll-reveal relative">
+                            <video 
+                                class="w-full h-full object-cover rounded-xl"
+                                poster="logo/img.JPG"
+                                preload="metadata"
+                                muted
+                                playsinline>
+                                <source src="midia/video/videobem.mp4" type="video/mp4">
+                                <source src="midia/video/videobem.mp4" type="video/quicktime">
+                                <source src="midia/video/videobem.mp4" type="video/webm">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                            
+                            <!-- Overlay com botão play -->
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-all duration-300">
+                                <div class="play-button bg-white/90 hover:bg-white rounded-full p-6 transform group-hover:scale-110 transition-all duration-300 shadow-2xl">
+                                    <svg class="w-12 h-12 text-gray-900 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fotos -->
+            <div class="space-y-8 mb-8">
+                <div id="photo-gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 stagger-children">
+                    <!-- Foto 1 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="0">
+                        <img src="midia/fotos/IMG_3350.JPG" alt="Banda Bem + em apresentação" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 2 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="1">
+                        <img src="midia/fotos/IMG_5656.JPG" alt="Banda Bem + interagindo com o público" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 3 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="2">
+                        <img src="midia/fotos/IMG_5697.JPG" alt="Banda Bem + em casamento" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 4 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="3">
+                        <img src="midia/fotos/IMG_6719.JPG" alt="Banda Bem + em evento ao vivo" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 5 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="4">
+                        <img src="midia/fotos/IMG_7025.JPG" alt="Banda Bem + tocando ao vivo" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 6 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="5">
+                        <img src="midia/fotos/IMG_7298.JPG" alt="Banda Bem + em festa" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <!-- Foto 7 -->
+                    <div class="aspect-square bg-gray-700 rounded-lg overflow-hidden cursor-pointer hover-scale transition-all scroll-reveal gallery-item" data-lightbox data-index="6">
+                        <img src="midia/fotos/IMG_8592.JPG" alt="Banda Bem + em show" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Link -->
+            <div class="text-center">
+                <a href="https://www.instagram.com/bandabemmais/" 
+                   target="_blank" 
+                   class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold rounded-lg transition-all hover-scale scroll-reveal">
+                    <img src="icon-instagram.svg" alt="" class="w-5 h-5 mr-2" aria-hidden="true">
+                    Siga no Instagram @bandabemmais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section-padding bg-gradient-to-br from-slate-900 via-gray-900 to-purple-950/30">
+        <div class="container-shadcn">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center space-y-4 mb-16">
+                    <h2 class="heading-2 text-3xl md:text-4xl font-bold text-foreground">Sobre a Banda Bem +</h2>
+                    <p class="lead text-lg text-muted-foreground">Conheça nossa história e nossos diferenciais</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-12 items-start">
+                    <div class="lg:col-span-2">
+                        <div class="aspect-[4/3] bg-gray-700 rounded-xl overflow-hidden mb-6 shadow-2xl">
+                            <img src="midia/fotos/IMG_3350.JPG" alt="Banda Bem + - Foto oficial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h3 class="heading-3 text-2xl font-semibold text-foreground">A banda que transforma qualquer evento em um show!</h3>
+                        
+                        <p class="body-large text-muted-foreground leading-relaxed">
+                            A Banda Bem + é especializada em criar momentos únicos e inesquecíveis em eventos. 
+                            Com um repertório diversificado que abrange MPB, Samba, Pop, Xote, Forró (antigas e atuais), 
+                            Sertanejo e muito mais, garantimos a trilha sonora perfeita para o seu grande momento.
+                        </p>
+
+                        <p class="body-large text-muted-foreground leading-relaxed">
+                            Nossa banda baile se destaca pela interação com o público e pela energia contagiante 
+                            que transforma qualquer celebração em uma experiência única. Seja em casamentos, 
+                            festas de aniversário ou eventos corporativos, levamos alegria e muita música de qualidade.
+                        </p>
+
+                        <div class="bg-gray-800 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-primary mb-2">Produção e Direção Musical</h4>
+                            <p class="body-default text-muted-foreground">
+                                <strong>Rogério Wilker</strong> - Responsável pela produção e direção musical, 
+                                garantindo a qualidade e profissionalismo em cada apresentação.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-300">Repertório diversificado e atualizado</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-300">Equipamentos profissionais de som e luz</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-300">Experiência em diversos tipos de eventos</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-gray-300">Atendimento personalizado e profissional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section-padding bg-gradient-to-br from-purple-950/40 via-slate-800 to-gray-800">
+        <div class="container-shadcn">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="heading-2 text-3xl md:text-4xl font-bold text-foreground">Contato</h2>
+                <p class="lead text-lg text-muted-foreground max-w-2xl mx-auto">Entre em contato conosco e contrate já para a sua festa</p>
+                <p class="text-primary font-semibold">Respondemos rapidamente!</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contato Direto -->
+                    <div class="space-y-6">
+                        <h3 class="heading-3 text-2xl font-semibold text-foreground">Fale Conosco Agora</h3>
+                        
+                        <!-- WhatsApp CTA Grande -->
+                        <div class="bg-primary-500 rounded-xl p-8 mb-8 text-center">
+                            <img src="icon-whatsapp.svg" alt="" class="w-16 h-16 mx-auto mb-4" aria-hidden="true">
+                            <h4 class="text-2xl font-bold text-white mb-2">WhatsApp</h4>
+                            <p class="text-white/90 mb-4">+ Informações: (83) 9 9957-8957</p>
+                            <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20Banda%20Bem%20+%20para%20meu%20evento" 
+                               target="blank" 
+                               class="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-bold rounded-lg hover:bg-gray-100 transition-colors">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                                </svg>
+                                Entre em contato!
+                            </a>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl p-6 text-center">
+                            <img src="icon-instagram.svg" alt="" class="w-12 h-12 mx-auto mb-3" aria-hidden="true">
+                            <h4 class="text-lg font-semibold text-white mb-2">Instagram</h4>
+                            <a href="https://www.instagram.com/bandabemmais/" 
+                               target="_blank" 
+                               class="text-white hover:text-gray-200 transition-colors">
+                                @bandabemmais
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulário -->
+                    <div class="space-y-8">
+                        <h3 class="heading-3 text-foreground">Solicite um Orçamento</h3>
+                        
+                        <form id="contact-form" class="form-shadcn" role="form" aria-labelledby="contact-form-title">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="form-group">
+                                    <label for="nome" class="label-shadcn label-required">Nome</label>
+                                    <input type="text" id="nome" name="nome" required 
+                                           class="input-shadcn"
+                                           placeholder="Seu nome completo"
+                                           aria-required="true"
+                                           aria-describedby="nome-help">
+                                    <div id="nome-help" class="help-text">Digite seu nome completo</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="whatsapp" class="label-shadcn label-required">WhatsApp</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" required 
+                                           class="input-shadcn"
+                                           placeholder="(83) 9 9999-9999"
+                                           aria-required="true"
+                                           aria-describedby="whatsapp-help">
+                                    <div id="whatsapp-help" class="help-text">Digite seu número do WhatsApp com DDD</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="label-shadcn">Email</label>
+                                <input type="email" id="email" name="email" 
+                                       class="input-shadcn"
+                                       placeholder="seu@email.com"
+                                       aria-describedby="email-help">
+                                <div id="email-help" class="help-text">Digite seu endereço de email</div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="form-group">
+                                    <label for="tipo-evento" class="label-shadcn label-required">Tipo de Evento</label>
+                                    <select id="tipo-evento" name="tipo-evento" required 
+                                            class="select-shadcn"
+                                            aria-required="true"
+                                            aria-describedby="tipo-evento-help">
+                                        <option value="">Selecione o tipo</option>
+                                        <option value="casamento">Casamento</option>
+                                        <option value="aniversario">Aniversário</option>
+                                        <option value="corporativo">Evento Corporativo</option>
+                                        <option value="formatura">Formatura</option>
+                                        <option value="festa-privada">Festa Privada</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                    <div id="tipo-evento-help" class="help-text">Selecione o tipo de evento que você está organizando</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="data" class="label-shadcn">Data do Evento</label>
+                                    <input type="date" id="data" name="data" 
+                                           class="input-shadcn"
+                                           aria-describedby="data-help">
+                                    <div id="data-help" class="help-text">Selecione a data do seu evento</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cidade-local" class="label-shadcn label-required">Cidade/Local</label>
+                                <input type="text" id="cidade-local" name="cidade-local" required 
+                                       class="input-shadcn"
+                                       placeholder="Cidade e local do evento"
+                                       aria-required="true"
+                                       aria-describedby="cidade-local-help">
+                                <div id="cidade-local-help" class="help-text">Digite a cidade e local onde será realizado o evento</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem" class="label-shadcn">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" 
+                                          class="textarea-shadcn"
+                                          placeholder="Conte-nos mais sobre seu evento..."
+                                          aria-describedby="mensagem-help"></textarea>
+                                <div id="mensagem-help" class="help-text">Descreva detalhes adicionais sobre seu evento</div>
+                            </div>
+
+                            <!-- Honeypot para prevenir spam -->
+                            <div class="hidden">
+                                <input type="text" name="honeypot" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <div class="form-actions center">
+                                <button type="submit" id="submit-btn" 
+                                        class="btn btn-brand btn-lg btn-ripple disabled:opacity-50 disabled:cursor-not-allowed"
+                                        aria-describedby="submit-help">
+                                    <span id="submit-text" class="flex items-center justify-center">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                        </svg>
+                                        Enviar Solicitação
+                                    </span>
+                                    <span id="loading-text" class="hidden flex items-center justify-center">
+                                        <svg class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                        </svg>
+                                        Enviando...
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="submit-help" class="sr-only">Clique para enviar sua solicitação de orçamento</div>
+
+                            <!-- Mensagens de feedback -->
+                            <div id="form-success" class="hidden p-4 bg-green-600 text-white rounded-lg" role="alert" aria-live="polite">
+                                <p class="font-semibold">Mensagem enviada com sucesso!</p>
+                                <p class="text-sm">Entraremos em contato em breve.</p>
+                            </div>
+
+                            <div id="form-error" class="hidden p-4 bg-red-600 text-white rounded-lg" role="alert" aria-live="assertive">
+                                <p class="font-semibold">Erro ao enviar mensagem.</p>
+                                <p class="text-sm">Tente novamente ou entre em contato pelo WhatsApp.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-t from-gray-900 via-slate-900 to-purple-950/20 py-12 border-t border-purple-800/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <img src="logo/logo.png" alt="Logo da banda" class="h-24 w-auto">
+                </div>
+                <p class="text-gray-300 mb-6">A banda que transforma qualquer evento em um show!</p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
+                    <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20banda%20para%20meu%20evento" 
+                       target="_blank" 
+                       class="flex items-center text-gray-300 hover:text-primary-400 transition-colors">
+                        <img src="icon-whatsapp.svg" alt="" class="w-5 h-5 mr-2" aria-hidden="true">
+                        (83) 9 9957-8957
+                    </a>
+                    <a href="https://www.instagram.com/bandabemmais/" 
+                       target="_blank" 
+                       class="flex items-center text-gray-300 hover:text-secondary-400 transition-colors">
+                        <img src="icon-instagram.svg" alt="" class="w-5 h-5 mr-2" aria-hidden="true">
+                        @bandabemmais
+                    </a>
+                </div>
+
+                <p class="text-gray-500 text-sm">
+                    © 2024. Todos os direitos reservados. | Produção e direção musical: Rogério Wilker
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-700 p-4">
+        <div class="flex gap-3">
+            <a href="https://wa.me/5583999578957?text=Olá,%20quero%20contratar%20a%20Banda%20Bem%20+%20para%20meu%20evento" 
+               target="_blank" 
+               class="flex-1 flex items-center justify-center px-4 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-colors">
+                <img src="icon-whatsapp.svg" alt="" class="w-5 h-5 mr-2" aria-hidden="true">
+                WhatsApp
+            </a>
+            <a href="#midia" 
+               class="flex-1 flex items-center justify-center px-4 py-3 bg-secondary-500 hover:bg-secondary-600 text-white font-semibold rounded-lg transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+                Mídia
+            </a>
+        </div>
+    </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" 
+         class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm" 
+         role="dialog" 
+         aria-modal="true" 
+         aria-labelledby="lightbox-title"
+         aria-hidden="true">
+        
+        <!-- Botão Anterior - Fixo no viewport -->
+        <button id="lightbox-prev" 
+                class="fixed left-4 md:left-6 lg:left-8 top-1/2 -translate-y-1/2 text-white hover:text-primary-400 transition-all hover:scale-110 bg-black/80 hover:bg-black/95 rounded-full p-3 md:p-4 lg:p-5 z-20 shadow-2xl border-2 border-white/30 backdrop-blur-sm"
+                aria-label="Foto anterior">
+            <svg class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        
+        <!-- Botão Próximo - Fixo no viewport -->
+        <button id="lightbox-next" 
+                class="fixed right-4 md:right-6 lg:right-8 top-1/2 -translate-y-1/2 text-white hover:text-primary-400 transition-all hover:scale-110 bg-black/80 hover:bg-black/95 rounded-full p-3 md:p-4 lg:p-5 z-20 shadow-2xl border-2 border-white/30 backdrop-blur-sm"
+                aria-label="Próxima foto">
+            <svg class="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        
+        <!-- Botão Fechar - X Moderno (fixo no canto) -->
+        <button id="lightbox-close" 
+                class="fixed top-4 right-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-black/70 hover:bg-black/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:text-primary-400 transition-all duration-300 z-30 border border-white/30 hover:border-primary-400/70 shadow-lg"
+                aria-label="Fechar galeria de imagens">
+            <svg class="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        
+        <!-- Imagem centralizada diretamente -->
+        <img id="lightbox-image" 
+             src="" 
+             alt="" 
+             class="max-w-[95vw] max-h-[95vh] rounded-lg shadow-2xl">
+        
+        
+        <!-- Contador - Fixo no viewport -->
+        <div id="lightbox-counter" 
+             class="fixed bottom-4 left-1/2 -translate-x-1/2 text-white bg-black/70 px-4 py-2 rounded-full text-sm md:text-base z-20 backdrop-blur-sm border border-white/20">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">8</span>
+        </div>
+        
+        <h2 id="lightbox-title" class="sr-only">Visualização de imagem em tamanho grande</h2>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" 
+         class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm" 
+         role="dialog" 
+         aria-modal="true" 
+         aria-labelledby="video-modal-title"
+         aria-hidden="true">
+        
+        <!-- Container do vídeo centralizado - Melhorado para mobile -->
+        <div class="flex items-center justify-center min-h-screen p-2 sm:p-4 md:p-8">
+            <div class="relative w-full max-w-6xl">
+                <!-- Botão Fechar - Igual ao das fotos, próximo ao vídeo -->
+                <button id="video-modal-close" 
+                        class="absolute top-2 right-2 md:top-4 md:right-4 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 bg-black/70 hover:bg-black/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:text-primary-400 transition-all duration-300 z-30 border border-white/30 hover:border-primary-400/70 shadow-lg"
+                        aria-label="Fechar vídeo">
+                    <svg class="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                
+                <div class="aspect-video bg-black rounded-lg sm:rounded-xl overflow-hidden shadow-2xl">
+                    <video id="modal-video" 
+                           class="w-full h-full object-cover"
+                           controls
+                           preload="metadata"
+                           playsinline
+                           poster="logo/img.JPG">
+                        <source src="midia/video/videobem.mp4" type="video/mp4">
+                        <source src="midia/video/videobem.mp4" type="video/quicktime">
+                        <source src="midia/video/videobem.mp4" type="video/webm">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                
+                <!-- Título do vídeo -->
+                <div class="mt-2 sm:mt-4 text-center px-2">
+                    <h3 id="video-modal-title" class="text-white text-lg sm:text-xl md:text-2xl font-semibold">
+                        Banda Bem + - Apresentação ao vivo
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-music');
+            const toggleBtn = document.getElementById('audio-toggle');
+            const toggleBtnMobile = document.getElementById('audio-toggle-mobile');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const playIconMobile = document.getElementById('play-icon-mobile');
+            const pauseIconMobile = document.getElementById('pause-icon-mobile');
+            
+            // Função para atualizar o estado visual dos botões
+            function updateButtonState(isPlaying) {
+                const label = isPlaying ? 'Pausar música' : 'Reproduzir música';
+                const title = isPlaying ? 'Pausar música' : 'Reproduzir música';
+                
+                // Desktop icons
+                if (playIcon && pauseIcon) {
+                    if (isPlaying) {
+                        playIcon.style.opacity = '0';
+                        pauseIcon.style.opacity = '1';
+                    } else {
+                        playIcon.style.opacity = '1';
+                        pauseIcon.style.opacity = '0';
+                    }
+                }
+                
+                // Mobile icons
+                if (playIconMobile && pauseIconMobile) {
+                    if (isPlaying) {
+                        playIconMobile.style.opacity = '0';
+                        pauseIconMobile.style.opacity = '1';
+                    } else {
+                        playIconMobile.style.opacity = '1';
+                        pauseIconMobile.style.opacity = '0';
+                    }
+                }
+                
+                // Update button attributes
+                if (toggleBtn) {
+                    toggleBtn.setAttribute('aria-label', label);
+                    toggleBtn.setAttribute('title', title);
+                    toggleBtn.classList.toggle('playing', isPlaying);
+                }
+                
+                if (toggleBtnMobile) {
+                    toggleBtnMobile.setAttribute('aria-label', label);
+                    toggleBtnMobile.setAttribute('title', title);
+                    toggleBtnMobile.classList.toggle('playing', isPlaying);
+                }
+            }
+            
+            // Função para alternar play/pause
+            async function togglePlayPause() {
+                if (audio.paused) {
+                    try {
+                        audio.muted = false;
+                        const playPromise = audio.play();
+                        if (playPromise !== undefined) {
+                            await playPromise;
+                            updateButtonState(true);
+                        }
+                    } catch (error) {
+                        // Erro ao reproduzir - mostrar estado pausado
+                        updateButtonState(false);
+                    }
+                } else {
+                    audio.pause();
+                    updateButtonState(false);
+                }
+            }
+            
+            // Event listeners para os botões
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', togglePlayPause);
+            }
+            
+            if (toggleBtnMobile) {
+                toggleBtnMobile.addEventListener('click', togglePlayPause);
+            }
+            
+            // Event listeners para o elemento audio
+            audio.addEventListener('play', () => updateButtonState(true));
+            audio.addEventListener('pause', () => updateButtonState(false));
+            audio.addEventListener('ended', () => updateButtonState(false));
+            
+            let musicStarted = false;
+            
+            // Função para iniciar a música
+            async function startMusic() {
+                if (musicStarted) return;
+                musicStarted = true;
+                
+                try {
+                    audio.muted = true;
+                    audio.volume = 1.0;
+                    
+                    await audio.play();
+                    console.log('🎵 Música iniciada!');
+                    
+                    // Desmuta após 800ms
+                    setTimeout(() => {
+                        audio.muted = false;
+                        updateButtonState(true);
+                        console.log('🔊 SOM ATIVADO! Música tocando automaticamente!');
+                    }, 800);
+                    
+                    // Remove os listeners após iniciar
+                    removeInteractionListeners();
+                } catch (error) {
+                    console.log('⚠️ Erro ao iniciar:', error.message);
+                    musicStarted = false;
+                }
+            }
+            
+            // Função para remover os listeners
+            function removeInteractionListeners() {
+                document.removeEventListener('click', startMusic);
+                document.removeEventListener('touchstart', startMusic);
+                document.removeEventListener('keydown', startMusic);
+                document.removeEventListener('scroll', startMusic);
+                document.removeEventListener('mousemove', startMusic);
+            }
+            
+            // Captura QUALQUER interação do usuário para iniciar a música
+            document.addEventListener('click', startMusic, { once: true });
+            document.addEventListener('touchstart', startMusic, { once: true, passive: true });
+            document.addEventListener('keydown', startMusic, { once: true });
+            document.addEventListener('scroll', startMusic, { once: true, passive: true });
+            document.addEventListener('mousemove', startMusic, { once: true, passive: true });
+            
+            console.log('🎧 Aguardando interação do usuário...');
+            console.log('💡 Clique, toque, role ou mova o mouse para iniciar a música!');
+        });
+    </script>
+
+    <!-- Video Modal JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoContainer = document.querySelector('.video-container');
+            const videoModal = document.getElementById('video-modal');
+            const modalVideo = document.getElementById('modal-video');
+            const closeButton = document.getElementById('video-modal-close');
+            const backgroundMusic = document.getElementById('background-music');
+            let musicWasPlaying = false;
+            
+            // Abrir modal ao clicar no vídeo
+            if (videoContainer) {
+                videoContainer.addEventListener('click', function() {
+                    videoModal.classList.remove('hidden');
+                    videoModal.setAttribute('aria-hidden', 'false');
+                    document.body.style.overflow = 'hidden'; // Previne scroll
+                    
+                    // Foca no vídeo para acessibilidade
+                    modalVideo.focus();
+                    
+                    // Opcional: reproduzir automaticamente
+                    modalVideo.currentTime = 0;
+                    modalVideo.play().catch(e => console.log('Autoplay prevented:', e));
+                });
+            }
+            
+            // Pausar música quando vídeo começar a tocar
+            if (modalVideo && backgroundMusic) {
+                modalVideo.addEventListener('play', function() {
+                    if (!backgroundMusic.paused) {
+                        musicWasPlaying = true;
+                        backgroundMusic.pause();
+                    }
+                });
+                
+                modalVideo.addEventListener('pause', function() {
+                    if (musicWasPlaying) {
+                        backgroundMusic.play().catch(e => console.log('Music autoplay prevented:', e));
+                    }
+                });
+            }
+            
+            // Fechar modal
+            function closeVideoModal() {
+                videoModal.classList.add('hidden');
+                videoModal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = ''; // Restaura scroll
+                
+                // Pausa o vídeo
+                modalVideo.pause();
+                modalVideo.currentTime = 0;
+                
+                // Retoma música se estava tocando
+                if (musicWasPlaying && backgroundMusic) {
+                    backgroundMusic.play().catch(e => console.log('Music autoplay prevented:', e));
+                    musicWasPlaying = false;
+                }
+            }
+            
+            // Event listeners para fechar
+            if (closeButton) {
+                closeButton.addEventListener('click', closeVideoModal);
+            }
+            
+            // Fechar ao clicar fora do vídeo
+            videoModal.addEventListener('click', function(e) {
+                if (e.target === videoModal) {
+                    closeVideoModal();
+                }
+            });
+            
+            // Fechar com ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !videoModal.classList.contains('hidden')) {
+                    closeVideoModal();
+                }
+            });
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

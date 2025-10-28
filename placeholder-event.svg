@@ -1,0 +1,60 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eventGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotlightGradient" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#eventGradient)"/>
+  
+  <!-- Spotlight effect -->
+  <ellipse cx="200" cy="90" rx="120" ry="80" fill="url(#spotlightGradient)"/>
+  
+  <!-- Stage -->
+  <rect x="30" y="220" width="340" height="60" fill="#1f2937" rx="8"/>
+  
+  <!-- Crowd silhouettes -->
+  <g fill="#111827" opacity="0.8">
+    <circle cx="80" cy="200" r="8"/>
+    <rect x="75" y="200" width="10" height="20" rx="2"/>
+    
+    <circle cx="120" cy="195" r="8"/>
+    <rect x="115" y="195" width="10" height="25" rx="2"/>
+    
+    <circle cx="160" cy="205" r="8"/>
+    <rect x="155" y="205" width="10" height="15" rx="2"/>
+    
+    <circle cx="200" cy="190" r="8"/>
+    <rect x="195" y="190" width="10" height="30" rx="2"/>
+    
+    <circle cx="240" cy="200" r="8"/>
+    <rect x="235" y="200" width="10" height="20" rx="2"/>
+    
+    <circle cx="280" cy="195" r="8"/>
+    <rect x="275" y="195" width="10" height="25" rx="2"/>
+    
+    <circle cx="320" cy="205" r="8"/>
+    <rect x="315" y="205" width="10" height="15" rx="2"/>
+  </g>
+  
+  <!-- Musical notes -->
+  <g fill="#10b981" opacity="0.7">
+    <circle cx="100" cy="80" r="6"/>
+    <rect x="106" y="65" width="2" height="20"/>
+    <path d="M 108 65 Q 115 60 115 70" stroke="#10b981" stroke-width="2" fill="none"/>
+    
+    <circle cx="300" cy="70" r="6"/>
+    <rect x="306" y="55" width="2" height="20"/>
+    <path d="M 308 55 Q 315 50 315 60" stroke="#10b981" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Event text -->
+  <text x="200" y="150" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">EVENTO</text>
+  <text x="200" y="175" text-anchor="middle" fill="#e5e7eb" font-family="Arial, sans-serif" font-size="14">Banda Bem +</text>
+</svg>
