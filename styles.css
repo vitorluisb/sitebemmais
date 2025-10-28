@@ -108,13 +108,13 @@ textarea:focus {
     
     /* Custom brand colors */
     --brand-primary: 262 83% 58%;
-    --brand-secondary: 346 77% 49%;
+    --brand-secondary: 217 91% 60%;
     --brand-accent: 142 76% 36%;
     
     /* Gradient backgrounds */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(346 77% 49%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(217 91% 60%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(262 83% 58%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(346 77% 49%) 50%, hsl(142 76% 36%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(217 91% 60%) 50%, hsl(142 76% 36%) 100%);
     
     /* Glass morphism */
     --glass-bg: hsla(0, 0%, 100%, 0.05);
@@ -128,7 +128,7 @@ textarea:focus {
     --primary-green: #84cc16;
     --primary-green-hover: #65a30d;
     --secondary-purple: #a855f7;
-    --secondary-pink: #ec4899;
+    --secondary-blue: #3b82f6;
     --dark-bg: hsl(var(--background));
     --dark-card: hsl(var(--card));
     --dark-border: hsl(var(--border));
@@ -149,11 +149,68 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: hsl(var(--background));
+  background: 
+    linear-gradient(135deg, 
+      hsl(var(--background)) 0%, 
+      hsl(262 83% 8%) 25%, 
+      hsl(217 91% 10%) 50%, 
+      hsl(142 76% 8%) 75%, 
+      hsl(var(--background)) 100%);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease-in-out infinite;
   color: hsl(var(--foreground));
   line-height: 1.6;
   overflow-x: hidden;
   font-feature-settings: "rlig" 1, "calt" 1;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Efeito de partículas animadas modernas */
+body::before {
+  content: '';
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background-image: 
+    radial-gradient(3px 3px at 20px 30px, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2) 40%, transparent 70%),
+    radial-gradient(2px 2px at 40px 70px, rgba(100, 200, 255, 0.6), rgba(100, 200, 255, 0.1) 40%, transparent 70%),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 150, 255, 0.7), rgba(255, 150, 255, 0.2) 40%, transparent 70%),
+    radial-gradient(4px 4px at 130px 80px, rgba(150, 255, 150, 0.5), rgba(150, 255, 150, 0.1) 40%, transparent 70%),
+    radial-gradient(2px 2px at 160px 30px, rgba(255, 200, 100, 0.6), rgba(255, 200, 100, 0.1) 40%, transparent 70%),
+    radial-gradient(1px 1px at 200px 60px, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2) 40%, transparent 70%),
+    radial-gradient(3px 3px at 250px 90px, rgba(200, 150, 255, 0.5), rgba(200, 150, 255, 0.1) 40%, transparent 70%),
+    radial-gradient(2px 2px at 300px 120px, rgba(100, 255, 200, 0.4), rgba(100, 255, 200, 0.1) 40%, transparent 70%);
+  background-repeat: repeat;
+  background-size: 350px 250px;
+  animation: sparkleEnhanced 30s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+  transform: translate(var(--mouse-x, 0), var(--mouse-y, 0)) translateY(var(--parallax-offset, 0));
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+/* Efeito de ondas flutuantes */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 226, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, rgba(255, 200, 120, 0.2) 0%, transparent 50%);
+  background-size: 800px 800px;
+  animation: float 30s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -2;
+  opacity: 0.7;
 }
 
 /* Gradientes personalizados */
@@ -201,6 +258,60 @@ body {
   50% {
     opacity: 1;
     transform: scale(1.1);
+  }
+}
+
+/* Animações para efeitos de background modernos */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes sparkleEnhanced {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateX(10px) translateY(-15px) rotate(90deg) scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-5px) translateY(-25px) rotate(180deg) scale(0.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateX(-15px) translateY(-10px) rotate(270deg) scale(1.2);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px) rotate(2deg) scale(1.05);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-35px) translateX(-5px) rotate(-1deg) scale(0.95);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-15px) translateX(-10px) rotate(1deg) scale(1.1);
+    opacity: 0.9;
   }
 }
 
@@ -267,7 +378,7 @@ body {
 }
 
 .gradient-secondary {
-  background: linear-gradient(135deg, var(--secondary-purple) 0%, var(--secondary-pink) 100%);
+  background: linear-gradient(135deg, var(--secondary-purple) 0%, var(--secondary-blue) 100%);
 }
 
 /* Header com efeito de scroll */
@@ -355,6 +466,14 @@ body {
   object-position: center center;
   filter: brightness(0.8) contrast(1.1);
   transition: all 0.3s ease;
+}
+
+/* Mobile: mostrar toda a foto sem distorção */
+@media (max-width: 768px) {
+  #home .absolute.inset-0.z-0 img {
+    object-fit: contain !important;
+    object-position: center center;
+  }
 }
 
 /* Melhor contraste para texto sobre foto real */
@@ -2044,7 +2163,7 @@ body {
   outline: none;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2300d4aa' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 1rem center;
   background-repeat: no-repeat;
   background-size: 1.25em 1.25em;
@@ -2061,6 +2180,96 @@ body {
   cursor: not-allowed;
   opacity: 0.5;
   background-color: hsl(var(--muted));
+}
+
+/* Estilo para as opções do select */
+.select-shadcn option {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  padding: 0.5rem;
+  border: none;
+}
+
+.select-shadcn option:hover {
+  background-color: hsl(var(--muted));
+}
+
+.select-shadcn option:focus {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Enhanced Date Input Styling */
+input[type="date"].input-shadcn {
+  position: relative;
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background) / 0.95) 100%);
+  border: 2px solid hsl(var(--border) / 0.5);
+  color: hsl(var(--foreground));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="date"].input-shadcn:focus {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15), 0 4px 12px hsl(var(--primary) / 0.1);
+  transform: translateY(-1px);
+}
+
+/* Estilo para o ícone do calendário */
+input[type="date"].input-shadcn::-webkit-calendar-picker-indicator {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2300d4aa'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'/%3e%3c/svg%3e");
+  background-size: 1.2em 1.2em;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  filter: brightness(1.2);
+}
+
+input[type="date"].input-shadcn::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  filter: brightness(1.4);
+}
+
+/* Placeholder para data quando vazio */
+input[type="date"].input-shadcn:invalid {
+  color: hsl(var(--muted-foreground) / 0.7);
+}
+
+input[type="date"].input-shadcn:valid {
+  color: hsl(var(--foreground));
+}
+
+/* Estilo adicional para melhorar a aparência do calendário */
+input[type="date"].input-shadcn::-webkit-datetime-edit {
+  color: hsl(var(--foreground));
+  padding: 0;
+}
+
+input[type="date"].input-shadcn::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+input[type="date"].input-shadcn::-webkit-datetime-edit-text {
+  color: hsl(var(--muted-foreground) / 0.7);
+  padding: 0 0.25rem;
+}
+
+input[type="date"].input-shadcn::-webkit-datetime-edit-month-field,
+input[type="date"].input-shadcn::-webkit-datetime-edit-day-field,
+input[type="date"].input-shadcn::-webkit-datetime-edit-year-field {
+  color: hsl(var(--foreground));
+  background: transparent;
+  border: none;
+  padding: 0.125rem;
+  border-radius: 4px;
+}
+
+input[type="date"].input-shadcn::-webkit-datetime-edit-month-field:focus,
+input[type="date"].input-shadcn::-webkit-datetime-edit-day-field:focus,
+input[type="date"].input-shadcn::-webkit-datetime-edit-year-field:focus {
+  background: hsl(var(--primary) / 0.1);
+  outline: none;
 }
 
 /* Checkbox */
@@ -2566,6 +2775,46 @@ body {
   padding-top: 80px; /* Compensate for fixed header height */
 }
 
+/* Mobile: remover espaço entre header e hero */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0 !important;
+  }
+  
+  #home {
+    margin-top: 0;
+    padding-top: 0;
+    min-height: 50vh !important; /* Reduzir ainda mais a altura da hero */
+  }
+  
+  #home .relative.z-20 {
+    min-height: 50vh !important; /* Reduzir ainda mais a altura do conteúdo */
+    padding-bottom: 1rem !important; /* Reduzir padding inferior */
+  }
+  
+  /* Ocultar botões de WhatsApp e mídia apenas no mobile */
+  #home div.flex.flex-col.sm\:flex-row.gap-3.justify-center.items-center.pt-4 {
+    display: none !important;
+  }
+  
+  /* Mobile player positioning */
+  .mobile-player-container {
+    display: flex !important;
+    align-items: center;
+    margin-right: 0.1rem;
+  }
+  
+  /* Garantir que nav-cta (incluindo WhatsApp) não apareça no mobile */
+  .nav-cta {
+    display: none !important;
+  }
+  
+  /* Garantir que apenas o player mobile seja visível fora do menu */
+  .nav-cta .btn-whatsapp {
+    display: none !important;
+  }
+}
+
 /* Body scroll lock when mobile menu is open */
 body.nav-open {
   overflow: hidden;
@@ -3057,8 +3306,7 @@ html {
 }
 
 .input-shadcn:focus,
-.textarea-shadcn:focus,
-.select-shadcn:focus {
+.textarea-shadcn:focus {
   transform: translateY(-1px);
 }
 
@@ -3069,65 +3317,30 @@ html {
   /* Sempre visível */
   opacity: 0.9 !important;
   visibility: visible !important;
+  display: flex !important;
   
-  /* Posicionamento fixo garantido */
-  position: fixed !important;
+  /* Posicionamento */
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 50 !important;
   
   /* Animação suave */
   transition: all 0.3s ease;
 }
 
+#lightbox-prev {
+  left: 1rem !important;
+}
+
+#lightbox-next {
+  right: 1rem !important;
+}
+
 #lightbox-prev:hover,
 #lightbox-next:hover {
-  opacity: 1 !important;
-  background: rgba(0, 0, 0, 0.95) !important;
-  transform: translateY(-50%) scale(1.1) !important;
-}
-
-/* Garantir que as setas estejam sempre no topo */
-#lightbox-prev,
-#lightbox-next {
-  z-index: 30 !important;
-}
-
-/* Mobile - Setas menores mas visíveis */
-@media (max-width: 640px) {
-  #lightbox-prev,
-  #lightbox-next {
-    padding: 0.75rem !important;
-    left: 1rem !important;
-    right: 1rem !important;
-  }
-  
-  #lightbox-prev {
-    left: 1rem !important;
-  }
-  
-  #lightbox-next {
-    right: 1rem !important;
-  }
-}
-
-/* Tablet */
-@media (min-width: 641px) and (max-width: 1024px) {
-  #lightbox-prev {
-    left: 1.5rem !important;
-  }
-  
-  #lightbox-next {
-    right: 1.5rem !important;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1025px) {
-  #lightbox-prev {
-    left: 2rem !important;
-  }
-  
-  #lightbox-next {
-    right: 2rem !important;
-  }
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
 }
 
 /* ===== LIGHTBOX IMAGE STANDARDIZATION ===== */
@@ -3176,33 +3389,56 @@ html {
 }
 
 /* ===== LIGHTBOX CLOSE BUTTON STYLES ===== */
-/* Estilos específicos para o botão X de fechar (posicionado sobre a imagem) */
+/* Estilos específicos para o botão X de fechar */
 #lightbox-close {
-  /* Efeitos visuais aprimorados */
-  backdrop-filter: blur(10px) !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+  /* FORÇAR VISIBILIDADE TOTAL */
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
   
-  /* Animação de entrada */
-  animation: fadeInScale 0.3s ease-out !important;
+  /* POSICIONAMENTO FIXO NO CANTO SUPERIOR DIREITO */
+  position: fixed !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 9999 !important;
+  
+  /* DIMENSÕES E LAYOUT */
+  width: 3rem !important;
+  height: 3rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  
+  /* ESTILO VISUAL */
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 50% !important;
+  color: white !important;
+  
+  /* Efeitos visuais aprimorados */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   
   /* Hover effects melhorados */
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  
-  /* Garantir que fique sempre visível sobre a imagem */
-  position: absolute !important;
-  z-index: 40 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover do botão X */
+#lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(239, 68, 68, 0.5) !important;
+  color: #ef4444 !important;
+  transform: scale(1.1) !important;
 }
 
 #lightbox-close:hover {
   /* Efeito de escala no hover */
-  transform: scale(1.15) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6) !important;
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  transform: scale(1.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
 }
 
 #lightbox-close:active {
   /* Efeito de clique */
-  transform: scale(0.9) !important;
+  transform: scale(0.9);
 }
 
 /* Animação de entrada do botão */
